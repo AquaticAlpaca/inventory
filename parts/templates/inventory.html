@@ -33,6 +33,7 @@ Given the following HTML template, can you modify it to display parts from the D
         <div class="spinner-border spinner-border-sm" role="status"></div>
     </div>
     <div id="errorMessage" class="error text-center mt-3"></div>
+    <div id="successMessage" class="success text-center mt-3"></div>
     <div id="partsList" class="mt-4"></div>
     <div id="pagination" class="mt-4"></div>
 </div>
@@ -147,6 +148,7 @@ Given the following HTML template, can you modify it to display parts from the D
                 }),
                 success: function(response) {
                     if (response.success) {
+                        $('#successMessage').text(response.message);
                         fetchParts(); // Refresh the list after deletion
                     } else {
                         $('#errorMessage').text(response.message);

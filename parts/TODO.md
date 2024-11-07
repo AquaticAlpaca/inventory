@@ -1,5 +1,4 @@
 - Improve item deletion
-    - Add deletion confirmation status message
     - Make status message area always visible so the page does not reflow when a message is displayed
 
 - Search: The search query remains after a refresh, but the filter isn't applied.
