@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block title %}Parts || Inventory{% endblock %}
+
+{% block content %}
+<!--
+GPT4.0 mini prompt:
+
+Below is the code I use to present a form to allow a user to add a part to an inventory database. In the same style, can you write a page to list items from that database in a paginated manner? The page should allow users to search for items, view the results, and access delete or edit functions.
+
+By default, the page should display all items in the database, paginated in groups of ten. The items are fetched by calling a lambda function URL http://myfunctionurl.on.aws.
+
+When the user changes the search field input, please clear the existing list of items, and update it based on the search input. Search results will be fetched by calling a lambda function url.
+
+Can you suggest a way to display the parts that is mobile-friendly, so a mobile user does not have to scroll to see all of the data?
+
+How can I show an indicator to the user during the loading process? I would like it to include the message "Please wait while we load parts..."
+
+How can I include a standardized, easy-to-use "Add" button to allow a user to add a new part to the database?
+
+I would like the page to be titled "Inventory Management :: Search."
+
+-- Then --
+Given the following HTML template, can you modify it to display parts from the Django parts database, and write a view to paginate, fetch, and display the parts?
+-->
+
+<div class="container">
+    <button id="addPartButton" class="btn btn-warning float-right mb-2" onclick="window.location.href='/add.html'">Add Part</button>
+    <h1>Inventory</h1>
+    <input type="text" id="searchInput" class="form-control" placeholder="Search for parts..." oninput="searchParts()">
+    <div id="loadingIndicator" class="loading">
+        <strong>Please wait while we load parts...</strong>
+        <div class="spinner-border spinner-border-sm" role="status"></div>
+    </div>
+    <div id="errorMessage" class="error text-center mt-3"></div>
+    <div id="partsList" class="mt-4"></div>
+    <div id="pagination" class="mt-4"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    let currentPage = 1;
+    const itemsPerPage = 10; // Adjust this to match the pagination in the view
+    let inventoryParts = [];
+
+    function fetchParts(searchTerm = '', page = 1) {
+        $('#loadingIndicator').show();
+        clearPage();
+
+        $.ajax({
+            url: `/parts/fetch?page=${page}&search=${searchTerm}`, // Adjust the URL to match your Django URL
+            type: 'GET',
+            success: function(response) {
+                $('#loadingIndicator').hide();
+                if (response.items && response.items.length > 0) {
+                    inventoryParts = response.items;
+                    displayParts(inventoryParts);
+                    setupPagination(response);
+                } else {
+                    $('#partsList').html('<p>No parts found.</p>');
+                }
+            },
+            error: function(xhr, status, error) {
+                $('#loadingIndicator').hide();
+                $('#errorMessage').text('Failed to load parts: ' + error);
+            }
+        });
+    }
+
+    function displayParts(parts) {
+        parts.forEach(part => {
+            $('#partsList').append(`
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">${part.name} (Part Number: ${part.partNumber})</h5>
+                        <p class="card-text">Status: ${part.status}</p>
+                        <p class="card-text">Quantity: ${part.quantity}</p>
+                        <p class="card-text">Location: ${part.location}</p>
+                        <button class="btn btn-outline-secondary" onclick="editPart('${part.id}')">Edit</button>
+                        <button class="btn btn-outline-danger" onclick="deletePart('${part.partNumber}', '${part.name}')">Delete</button>
+                    </div>
+                </div>
+            `);
+        });
+    }
+
+    function setupPagination(response) {
+        $('#pagination').empty(); // Clear previous pagination
+        if (response.has_previous) {
+            $('#pagination').append(`
+                <button class="btn btn-secondary" onclick="changePage(${response.previous_page_number})">Previous</button>
+            `);
+        }
+        for (let i = 1; i <= Math.ceil(response.totalItems / itemsPerPage); i++) {
+            $('#pagination').append(`
+                <button class="btn btn-secondary ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>
+            `);
+        }
+        if (response.has_next) {
+            $('#pagination').append(`
+                <button class="btn btn-secondary" onclick="changePage(${response.next_page_number})">Next</button>
+            `);
+        }
+    }
+
+    function searchParts() {
+        const searchTerm = $('#searchInput').val().toLowerCase();
+        clearPage();
+        currentPage = 1; // Reset to first page
+        const filteredParts = inventoryParts.filter(part =>
+            part.partNumber.toLowerCase().includes(searchTerm)
+            || part.name.toLowerCase().includes(searchTerm)
+        );
+        displayParts(filteredParts);
+        setupPagination(filteredParts.length);
+    }
+
+    function clearPage() {
+        $('#partsList').empty();
+        $('#pagination').empty();
+        $('#errorMessage').text('');
+    }
+
+    // Initial fetch to load all parts
+    $(document).ready(function() {
+        fetchParts();
+    });
+</script>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory :: Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #007bff; /* Bootstrap primary color */
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 1.5rem; /* Larger button text */
+        }
+        .form-control {
+            font-size: 1.5rem; /* Larger input text */
+        }
+        .error {
+            color: red;
+            font-size: 1.2rem;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
