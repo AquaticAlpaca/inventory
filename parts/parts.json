@@ -1,0 +1,1599 @@
+{
+  "acs-inventory-parts": [
+    {
+      "PutRequest": {
+        "Item": {
+          "partNumber": {"S": "N/a"},
+          "name": {"S": "Bulbs, Unknown"},
+          "location": {"S": "1"},
+          "quantity": {"N": "4"},
+          "status": {"S": "New"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Bulb, GE"},
+          "partNumber": {"S": "4553"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Bulb, GE"},
+          "partNumber": {"S": "1683"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Bulb, Grimes"},
+          "partNumber": {"S": "A-7079B-24"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Bulb, GE"},
+          "partNumber": {"S": "1495"},
+          "quantity": {"N": "2"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Steering Cylinder"},
+          "partNumber": {"S": "713096-58"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Circuit Breaker, Switch"},
+          "partNumber": {"S": "C6363-1-5A"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Circuit Breaker, Switch"},
+          "partNumber": {"S": "C6363-1-70A"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Servo Motor, Cutler-Hammer"},
+          "partNumber": {"S": "17-1661"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Belt, Commander A/C"},
+          "partNumber": {"S": "232L100"},
+          "quantity": {"N": "3"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Belt"},
+          "partNumber": {"S": "232L"},
+          "quantity": {"N": "3"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Cable, Turbo, Merlin"},
+          "partNumber": {"S": "98-9903-506"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Autopilot Amp"},
+          "partNumber": {"S": "1C515-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Oil Cooler, NDM"},
+          "partNumber": {"S": "200009A"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Serviceable"},
+          "name": {"S": "Alternator, Ford"},
+          "partNumber": {"S": "E3FFI0300AA"},
+          "quantity": {"N": "2"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Diode"},
+          "partNumber": {"S": "MR1225SL"},
+          "quantity": {"N": "2"},
+          "location": {"S": "2"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Electrical joint compound for diodes"},
+          "partNumber": {"S": "Penetrox A-I3"},
+          "quantity": {"N": "1"},
+          "location": {"S": "2"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Specialty socket, 28mm for diode MR1225SL"},
+          "partNumber": {"S": "Carlyle CR-V"},
+          "quantity": {"N": "1"},
+          "location": {"S": "2"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Fuel Flow Divider"},
+          "partNumber": {"S": "2524178-3"},
+          "quantity": {"N": "1"},
+          "location": {"S": "2"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Exhaust Gaskets"},
+          "partNumber": {"S": "LW-15486"},
+          "quantity": {"N": "0"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Exhaust Risers"},
+          "partNumber": {"S": "N/a"},
+          "quantity": {"N": "2"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Prop Governor"},
+          "partNumber": {"S": "210733"},
+          "quantity": {"N": "1"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Load Shed"},
+          "partNumber": {"S": "1240100-1"},
+          "quantity": {"N": "2"},
+          "location": {"S": "4"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Nuts"},
+          "partNumber": {"S": "N/a"},
+          "quantity": {"N": "15"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Cowl Flap Motor"},
+          "partNumber": {"S": "EYLC 7567-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Cowl Flap Motor"},
+          "partNumber": {"S": "EYLC 8734"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Magneto"},
+          "partNumber": {"S": "10-349310-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Hydraulic Pump, Commander"},
+          "partNumber": {"S": "105HBG 211B"},
+          "quantity": {"N": "1"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Fuel Boost Pump"},
+          "partNumber": {"S": "ICI5-1"},
+          "quantity": {"N": "2"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Fuel Pump"},
+          "partNumber": {"S": "RG9080J1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Fuel Boost Pump"},
+          "partNumber": {"S": "RG12400F"},
+          "quantity": {"N": "2"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Voltage Regulator, 28V"},
+          "partNumber": {"S": "VR2000-28-2"},
+          "quantity": {"N": "4"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Flexible Exhaust Pipe"},
+          "partNumber": {"S": "90-1020-502 A A-3681"},
+          "quantity": {"N": "4"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM38S-C"},
+          "quantity": {"N": "22"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "URHM38E"},
+          "quantity": {"N": "28"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM38E"},
+          "quantity": {"N": "4"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM385B"},
+          "quantity": {"N": "2"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Fuel Servo, Bendix"},
+          "partNumber": {"S": "RS10B1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Starter"},
+          "partNumber": {"S": "BC315-100-4"},
+          "quantity": {"N": "2"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Repaired"},
+          "name": {"S": "Volt/Amp Meter"},
+          "partNumber": {"S": "VA-120"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "Magneto"},
+          "partNumber": {"S": "BL-349290-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "Turbocharger"},
+          "partNumber": {"S": "98-1005-520 C"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Serviceable"},
+          "name": {"S": "Garmin GNS 430"},
+          "partNumber": {"S": "011-00280-10"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Vacuum Pump"},
+          "partNumber": {"S": "215CC"},
+          "quantity": {"N": "2"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Alternator, Kelly"},
+          "partNumber": {"S": "ES4011"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM38EG"},
+          "quantity": {"N": "10"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "Starter"},
+          "partNumber": {"S": "149-24HT"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Cowl Flap Motor"},
+          "partNumber": {"S": "EYLC 8734"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Magneto"},
+          "partNumber": {"S": "10-349310-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Hydraulic Pump, Commander"},
+          "partNumber": {"S": "105HBG 211B"},
+          "quantity": {"N": "1"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Fuel Boost Pump"},
+          "partNumber": {"S": "ICI5-1"},
+          "quantity": {"N": "2"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Fuel Pump"},
+          "partNumber": {"S": "RG9080J1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Fuel Boost Pump"},
+          "partNumber": {"S": "RG12400F"},
+          "quantity": {"N": "2"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Voltage Regulator, 28V"},
+          "partNumber": {"S": "VR2000-28-2"},
+          "quantity": {"N": "4"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Flexible Exhaust Pipe"},
+          "partNumber": {"S": "90-1020-502 A A-3681"},
+          "quantity": {"N": "4"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM38S-C"},
+          "quantity": {"N": "22"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "URHM38E"},
+          "quantity": {"N": "28"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM38E"},
+          "quantity": {"N": "4"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM385B"},
+          "quantity": {"N": "2"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Fuel Servo, Bendix"},
+          "partNumber": {"S": "RS10B1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Starter"},
+          "partNumber": {"S": "BC315-100-4"},
+          "quantity": {"N": "2"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Repaired"},
+          "name": {"S": "Volt/Amp Meter"},
+          "partNumber": {"S": "VA-120"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "Magneto"},
+          "partNumber": {"S": "BL-349290-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "Turbocharger"},
+          "partNumber": {"S": "98-1005-520 C"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Serviceable"},
+          "name": {"S": "Garmin GNS 430"},
+          "partNumber": {"S": "011-00280-10"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Vacuum Pump"},
+          "partNumber": {"S": "215CC"},
+          "quantity": {"N": "2"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "Alternator, Kelly"},
+          "partNumber": {"S": "ES4011"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Spark Plugs"},
+          "partNumber": {"S": "RHM38EG"},
+          "quantity": {"N": "10"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "Starter"},
+          "partNumber": {"S": "149-24HT"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "Actuator Electromechanical"},
+          "partNumber": {"S": "EYLC-7567-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Oil Cooler"},
+          "partNumber": {"S": "8000343"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Oil Cooler"},
+          "partNumber": {"S": "20009A"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Oil Cooler"},
+          "partNumber": {"S": "8533718"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Landing Gear Cylinder"},
+          "partNumber": {"S": "EA1596"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Landing Gear Cylinder"},
+          "partNumber": {"S": "EA1568"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Red Abrasive Disc, 3M"},
+          "partNumber": {"S": "01253"},
+          "quantity": {"N": "22"},
+          "location": {"S": "2"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Red Abrasive Disc, 3M"},
+          "partNumber": {"S": "01260"},
+          "quantity": {"N": "23"},
+          "location": {"S": "2"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Power Strip 120V-60Hz-15A"},
+          "partNumber": {"S": "50688"},
+          "quantity": {"N": "1"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Serviceable"},
+          "name": {"S": "Nav System"},
+          "partNumber": {"S": "KNS-80"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Serviceable"},
+          "name": {"S": "Nav-Comm"},
+          "partNumber": {"S": "MX300"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Trimble TNL-3000"},
+          "partNumber": {"S": "1384-03-0311"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Bad"},
+          "name": {"S": "VHF Communication Transceiver"},
+          "partNumber": {"S": "064-1019-00"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Spinner (Base?)"},
+          "partNumber": {"S": "C-3259-1P"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Spinner"},
+          "partNumber": {"S": "C-3278-P"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Spinner (Cone?)"},
+          "partNumber": {"S": "B-3264-1P"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Spinner"},
+          "partNumber": {"S": "C-3258-P"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Shelf"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Carb Air Box"},
+          "partNumber": {"S": "19650-01"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Used"},
+          "name": {"S": "Fluorescent Light Bar"},
+          "partNumber": {"S": "LED24LSUC"},
+          "quantity": {"N": "2"},
+          "location": {"S": "4"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Seatbelt"},
+          "partNumber": {"S": "FDC-2700"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Core"},
+          "name": {"S": "KN-64"},
+          "partNumber": {"S": "066-1088-00"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Receiver"},
+          "partNumber": {"S": "42100"},
+          "quantity": {"N": "1"},
+          "location": {"S": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Digital Coax 2-way Splitter"},
+          "partNumber": {"S": "2151A"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Garmin GPSMAP 696"},
+          "partNumber": {"S": "10R-024616"},
+          "quantity": {"N": "1"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "PC4 Intercom"},
+          "partNumber": {"S": "70650-000"},
+          "quantity": {"N": "1"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Used"},
+          "name": {"S": "Logi Wireless Mouse"},
+          "partNumber": {"S": "MS10"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Battery Cable"},
+          "partNumber": {"S": "781115"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Timkin Bearing Cup 13830"},
+          "partNumber": {"S": "04-02054"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Cup Assy, Bearing"},
+          "partNumber": {"S": "13830"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Exhaust Gasket, Rapco"},
+          "partNumber": {"S": "RALW15486"},
+          "quantity": {"N": "6"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Valve Cover Gaskets"},
+          "partNumber": {"S": "RG-71450"},
+          "quantity": {"N": "5"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Spark Plug, Savior"},
+          "partNumber": {"S": "BPR6E"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "HIPA Air Filter"},
+          "partNumber": {"S": "17211-899-000"},
+          "quantity": {"N": "1"},
+          "location": {"S": "2"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Master Solenoid"},
+          "partNumber": {"S": "STS-M12"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Ignition Switch Assembly"},
+          "partNumber": {"S": "10-357230-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": ""},
+          "name": {"S": "Bracket, Microphone"},
+          "partNumber": {"S": "MT-2189/AIC"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Condor Tire 5.00-5 6PLY"},
+          "partNumber": {"S": "072-312-0"},
+          "quantity": {"N": "1"},
+          "location": {"S": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring"},
+          "partNumber": {"S": "MS28775-010"},
+          "quantity": {"N": "2"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring"},
+          "partNumber": {"S": "MS28775-011"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring"},
+          "partNumber": {"S": "MS28775-114"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring"},
+          "partNumber": {"S": "MS28775-115"},
+          "quantity": {"N": "3"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring"},
+          "partNumber": {"S": "MS28775-220"},
+          "quantity": {"N": "2"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Tube Fitting Gasket"},
+          "partNumber": {"S": "MS28778-4"},
+          "quantity": {"N": "2"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring, 70 Duro Low Temp Nitrile"},
+          "partNumber": {"S": "MS83461/1-223"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Parker O-Ring 02697"},
+          "partNumber": {"S": "S0310-012R Rev M"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Parker O-Ring 02697"},
+          "partNumber": {"S": "S0310-116R Rev M"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Ring-Packing Backup"},
+          "partNumber": {"S": "S0311-325 Rev A"},
+          "quantity": {"N": "2"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Ring-Packing Backup"},
+          "partNumber": {"S": "S0311-116 Rev A"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Core, Air Valve"},
+          "partNumber": {"S": "AN809-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Wiper, 15”"},
+          "partNumber": {"S": "10V70"},
+          "quantity": {"N": "1"},
+          "location": {"S": "8"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Gasket"},
+          "partNumber": {"S": "AN901-5A"},
+          "quantity": {"N": "1"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Parker O-Ring 02697"},
+          "partNumber": {"S": "S0310-905R Rev L"},
+          "quantity": {"N": "2"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "LT Nitrile O-Ring"},
+          "partNumber": {"S": "S0310-335R"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Ring-Packing Backup"},
+          "partNumber": {"S": "S0311-328 Rev A"},
+          "quantity": {"N": "4"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Parker O-Ring 02697"},
+          "partNumber": {"S": "S0310-110R Rev L"},
+          "quantity": {"N": "2"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "PTFE Backup"},
+          "partNumber": {"S": "S0311-110"},
+          "quantity": {"N": "2"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Parker O-Ring 02697"},
+          "partNumber": {"S": "S0310-235R Rev L"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "LT Nitrile O-Ring"},
+          "partNumber": {"S": "S0310-328R"},
+          "quantity": {"N": "2"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Parker O-Ring 02697"},
+          "partNumber": {"S": "S0310-146R Rev L"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Fuel Cap Custom Kit LR Fuel Tank O-Rings"},
+          "partNumber": {"S": "Custom Kit No. 87A"},
+          "quantity": {"N": "6"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Gasket, Turbo Inlet"},
+          "partNumber": {"S": "RJ0115D"},
+          "quantity": {"N": "2"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring Kit"},
+          "partNumber": {"S": "147-0"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring Kit"},
+          "partNumber": {"S": "142-0"},
+          "quantity": {"N": "1"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "O-Ring Buna N Black 90 Shore A (NBR 90)"},
+          "partNumber": {"S": "A5568"},
+          "quantity": {"N": "8"},
+          "location": {"S": "5"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Gasket, Turbo Outlet"},
+          "partNumber": {"S": "RJ0114"},
+          "quantity": {"N": "5"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Circuit Breaker, Push/Pull 1A"},
+          "partNumber": {"S": "7277-2-1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Antenna"},
+          "partNumber": {"S": "A1575-936W-TNCF-000-RG-27-NM"},
+          "quantity": {"N": "1"},
+          "location": {"S": "1"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Gasket, Starter Adapter To CRA"},
+          "partNumber": {"S": "SA627993"},
+          "quantity": {"N": "1"},
+          "location": {"S": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "IO 540 E1B5"},
+          "partNumber": {"S": "IO 540 E1B5"},
+          "quantity": {"N": "6"},
+          "location": {"S": "Eng"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Overhauled"},
+          "name": {"S": "IO 520"},
+          "partNumber": {"S": "IO 520"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Eng"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Counterweight"},
+          "partNumber": {"S": "72801"},
+          "quantity": {"N": "2"},
+          "location": {"S": "Eng"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Alternator Kit"},
+          "partNumber": {"S": "90-3058"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Eng"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "SL13521A M010"},
+          "partNumber": {"S": "SL13521A M010"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Eng"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "New"},
+          "name": {"S": "Kit-Oil Pump Impeller"},
+          "partNumber": {"S": "05K19423-S"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Eng"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Servo, Fuel, Commander"},
+          "partNumber": {"S": "391787-4/RS10B1"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Eng"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "status": {"S": "Worked"},
+          "name": {"S": "Magneto, Bendix S8LN-1208"},
+          "partNumber": {"S": "10-349300-4"},
+          "quantity": {"N": "1"},
+          "location": {"S": "Eng"}
+        }
+      }
+    }
+  ]
+}

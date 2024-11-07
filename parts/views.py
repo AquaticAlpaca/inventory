@@ -4,16 +4,11 @@ from django.shortcuts import render
 from .models import Part
 
 def parts_list(request):
-    # Get the search term from the query parameters
-    search_term = request.GET.get('search', '')
-
-    # Fetch all parts, optionally filtering by the search term
+    # Fetch all parts
     parts = Part.objects.all()
-    if search_term:
-        parts = parts.filter(part_number__icontains=search_term) | parts.filter(name__icontains=search_term)
 
     # Pagination
-    paginator = Paginator(parts, 10)  # Show 10 parts per page
+    paginator = Paginator(parts, parts.count())  # Show all parts
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
@@ -36,7 +31,6 @@ def parts_list(request):
         'has_previous': page_obj.has_previous(),
         'next_page_number': page_obj.next_page_number() if page_obj.has_next() else None,
         'previous_page_number': page_obj.previous_page_number() if page_obj.has_previous() else None,
-        'totalItems': paginator.count,  # Total number of items for pagination
     })
 
 def index(request):
