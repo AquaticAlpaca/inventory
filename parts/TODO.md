@@ -1,5 +1,4 @@
 - Improve item deletion
-    - Remove deletion confirmation alert
     - Add deletion confirmation status message
     - Make status message area always visible so the page does not reflow when a message is displayed
 

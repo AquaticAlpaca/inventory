@@ -147,8 +147,7 @@ Given the following HTML template, can you modify it to display parts from the D
                 }),
                 success: function(response) {
                     if (response.success) {
-                        alert(response.message);
-                        searchParts(); // Refresh the list after deletion
+                        fetchParts(); // Refresh the list after deletion
                     } else {
                         $('#errorMessage').text(response.message);
                     }
