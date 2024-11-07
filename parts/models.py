@@ -14,7 +14,6 @@ The Name field is a string. The Quantity field is an integer.
 
 """
 from django.db import models
-import uuid
 
 class Location(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -32,7 +31,6 @@ class Status(models.Model):
         return self.name
 
 class Part(models.Model):
-    unique_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     part_number = models.CharField(max_length=50)
     name = models.CharField(max_length=100)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
