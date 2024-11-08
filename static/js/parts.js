@@ -171,3 +171,9 @@ function changePage(page) {
     currentPage = page;
     fetchParts($('#searchInput').val(), currentPage); // Fetch parts for the current page
 }
+
+module.exports = {
+    displayParts: displayParts,
+    setupPagination: setupPagination,
+    showToast: showToast
+};
