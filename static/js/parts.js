@@ -171,6 +171,3 @@ function changePage(page) {
     currentPage = page;
     fetchParts($('#searchInput').val(), currentPage); // Fetch parts for the current page
 }
-
-// Initial fetch to load all parts
-fetchParts();
