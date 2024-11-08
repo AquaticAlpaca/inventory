@@ -20,8 +20,8 @@ class PartsListView(View):
             'previous_page_number': page_obj.previous_page_number() if page_obj.has_previous() else None,
         })
 
-    def paginate_parts(self, parts, page_number):
-        paginator = Paginator(parts, parts.count())  # Show all parts
+    def paginate_parts(self, parts, page_number, items_per_page=10):
+        paginator = Paginator(parts, 999999)  # Show all parts
         return paginator.get_page(page_number)
 
     def serialize_parts(self, page_obj):

@@ -1,0 +1,4 @@
+Django==5.1.1
+optional-django==0.1.0
+pytest==8.3.3
+sqlparse==0.5.1
