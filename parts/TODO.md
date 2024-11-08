@@ -5,6 +5,10 @@
     - Clear search field on page refresh, or
     - Reapply the search filter after a refresh
 
+- Add authentication
+
+- Add authorization checks
+
 - Allow users to edit parts
 
 - Allow users to add parts
