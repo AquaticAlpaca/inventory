@@ -86,6 +86,7 @@ Given the following HTML template, can you modify it to display parts from the D
                     inventoryParts = response.items;
                     displayParts(inventoryParts);
                     setupPagination(response);
+                    searchParts();
                 } else {
                     $('#partsList').html('<p>No parts found.</p>');
                 }
