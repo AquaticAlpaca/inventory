@@ -182,7 +182,12 @@ Given the following HTML template, can you modify it to display parts from the D
                 }
             },
             error: function(xhr, status, error) {
-                showAlert('Failed to delete item: ' + xhr.responseText, 'danger');
+                errorMessage = 'Failed to delete item: ' + xhr.responseText;
+                if (xhr.status == 404) {
+                    errorMessage = "The selected part no longer exists. Please reload the page to try again."
+                }
+
+                showToast(errorMessage, 'danger');
             }
         });
     }
@@ -215,7 +220,6 @@ Given the following HTML template, can you modify it to display parts from the D
     }
 
 
-    // Initial fetch to load all parts
     $(document).ready(function() {
         $('body').on('click', '.delete-button', function() {
 
@@ -228,6 +232,7 @@ Given the following HTML template, can you modify it to display parts from the D
             deletePart();
         });
 
+        // Initial fetch to load all parts
         fetchParts();
     });
 </script>

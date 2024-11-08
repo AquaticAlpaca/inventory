@@ -1,3 +1,7 @@
+- Test backend
+
+- Test JS
+
 - Add authentication
 
 - Add authorization checks
