@@ -1,6 +1,4 @@
 const API_URL = '/parts';
-let currentPage = 1;
-const itemsPerPage = 10;
 let inventoryParts = [];
 let partIdToDelete;
 
@@ -18,12 +16,12 @@ $(document).ready(function() {
     });
 });
 
-function fetchParts(searchTerm = '', page = 1) {
+function fetchParts() {
     $('#loadingIndicator').show();
     clearPage();
 
     $.ajax({
-        url: `${API_URL}/fetch?page=${page}&search=${searchTerm}`,
+        url: `${API_URL}/fetch`,
         type: 'GET',
         success: handleFetchSuccess,
         error: handleFetchError
@@ -36,7 +34,6 @@ function handleFetchSuccess(response) {
         inventoryParts = response.items;
         displayParts(inventoryParts);
         searchParts();
-        setupPagination(response);
     } else {
         $('#partsList').html('<p>No parts found.</p>');
     }
@@ -63,37 +60,14 @@ function displayParts(parts) {
     $('#partsList').append(partsHtml);
 }
 
-function setupPagination(response) {
-    $('#pagination').empty();
-    if (response.has_previous) {
-        $('#pagination').append(createPaginationButton('Previous', response.previous_page_number));
-    }
-    for (let i = 1; i <= Math.ceil(response.totalItems / itemsPerPage); i++) {
-        $('#pagination').append(createPaginationButton(i, i, i === currentPage));
-    }
-    if (response.has_next) {
-        $('#pagination').append(createPaginationButton('Next', response.next_page_number));
-    }
-}
-
-function createPaginationButton(label, pageNumber, isActive = false) {
-    return `
-        <button class="btn btn-secondary ${isActive ? 'active' : ''}" onclick="changePage(${pageNumber})">
-            ${label}
-        </button>
-    `;
-}
-
 function searchParts() {
     const searchTerm = $('#searchInput').val().toLowerCase();
     clearPage();
-    currentPage = 1; // Reset to first page
     const filteredParts = inventoryParts.filter(part =>
         part.partNumber.toLowerCase().includes(searchTerm) ||
         part.name.toLowerCase().includes(searchTerm)
     );
     displayParts(filteredParts);
-    setupPagination({ totalItems: filteredParts.length });
 }
 
 function getCookie(name) {
@@ -144,7 +118,6 @@ function handleDeleteError(xhr) {
 
 function clearPage() {
     $('#partsList').empty();
-    $('#pagination').empty();
     $('#errorMessage').text('');
 }
 
@@ -167,13 +140,7 @@ function showToast(message, type) {
     toast.show();
 }
 
-function changePage(page) {
-    currentPage = page;
-    fetchParts($('#searchInput').val(), currentPage); // Fetch parts for the current page
-}
-
 module.exports = {
     displayParts: displayParts,
-    setupPagination: setupPagination,
     showToast: showToast
 };

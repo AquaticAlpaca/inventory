@@ -1,6 +1,3 @@
-'use strict';
-
-
 const $ = require('jquery');
 const bootstrap = require('bootstrap');
 jest.mock('bootstrap', () => {
@@ -22,7 +19,6 @@ describe('Inventory JavaScript Functions', () => {
     beforeEach(() => {
         document.body.innerHTML = `
             <div id="partsList"></div>
-            <div id="pagination"></div>
             <div class="toast-container"></div>
         `;
     });
@@ -37,21 +33,6 @@ describe('Inventory JavaScript Functions', () => {
 
         expect($('#partsList').html()).toContain('Part 1 (Part Number: PN001)');
         expect($('#partsList').html()).toContain('Part 2 (Part Number: PN002)');
-    });
-
-    test('setupPagination should create pagination buttons', () => {
-        const response = {
-            has_previous: true,
-            previous_page_number: 1,
-            has_next: true,
-            next_page_number: 3,
-            totalItems: 20
-        };
-
-        testSubject.setupPagination(response);
-
-        expect($('#pagination').html()).toContain('Previous');
-        expect($('#pagination').html()).toContain('Next');
     });
 
     test('showToast should display a toast message', () => {
