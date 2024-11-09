@@ -42,3 +42,48 @@ describe('Inventory JavaScript Functions', () => {
         expect($('.toast-body').text()).toBe('Test message');
     });
 });
+
+
+describe('clearPage function', () => {
+    it('should clear the parts list', () => {
+        $('#partsList').append('<div>Part 1</div>');
+        testSubject.clearPage();
+        expect($('#partsList').children().length).toBe(0);
+    });
+
+    it('should clear the error message', () => {
+        $('#errorMessage').text('An error occurred');
+        testSubject.clearPage();
+        expect($('#errorMessage').text()).toBe('');
+    });
+
+    it('should not affect other elements', () => {
+        $('body').append('<div id="otherElement"><div>Other Content</div></div>');
+
+        testSubject.clearPage();
+        expect($('#otherElement').children().length).toBe(1); // Should still have 1 child
+
+        $('#otherElement').remove();
+    });
+
+
+    it('should handle multiple calls gracefully', () => {
+        $('#partsList').append('<div>Part 1</div>');
+        $('#errorMessage').text('An error occurred');
+
+        testSubject.clearPage(); // First call
+        expect($('#partsList').children().length).toBe(0);
+        expect($('#errorMessage').text()).toBe('');
+
+        testSubject.clearPage(); // Second call
+        expect($('#partsList').children().length).toBe(0);
+        expect($('#errorMessage').text()).toBe('');
+    });
+
+    it('should not throw an error when called on empty elements', () => {
+        $('#partsList').empty();
+        $('#errorMessage').text('');
+
+        expect(() => testSubject.clearPage()).not.toThrow();
+    });
+});
