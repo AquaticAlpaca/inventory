@@ -142,5 +142,6 @@ function showToast(message, type) {
 
 module.exports = {
     displayParts,
-    clearPage
+    clearPage,
+    showToast
 };

@@ -16,7 +16,8 @@ global.$ = $;
 
 const {
     displayParts,
-    clearPage
+    clearPage,
+    showToast
 } = require('../parts');
 
 describe('Inventory JavaScript Functions', () => {
