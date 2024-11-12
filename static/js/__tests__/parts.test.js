@@ -139,4 +139,4 @@ describe('getCookie', () => {
 });
 
 // Jest completely fails to mock the functions called by my target.
-// Test deletePart and handleDelete* tests when Jest is better.
+// Improve test coverage when Jest is better.

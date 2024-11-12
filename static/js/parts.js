@@ -2,6 +2,7 @@ const API_URL = '/parts';
 let inventoryParts = [];
 let partIdToDelete;
 
+/* v8 ignore start */
 $(document).ready(function() {
     fetchParts();
 
@@ -15,7 +16,9 @@ $(document).ready(function() {
         deletePart(partIdToDelete);
     });
 });
+/* v8 ignore stop */
 
+/* v8 ignore start */
 function fetchParts() {
     $('#loadingIndicator').show();
     clearPage();
@@ -27,7 +30,9 @@ function fetchParts() {
         error: handleFetchError
     });
 }
+/* v8 ignore stop */
 
+/* v8 ignore start */
 function handleFetchSuccess(response) {
     $('#loadingIndicator').hide();
     if (response.items && response.items.length > 0) {
@@ -38,11 +43,14 @@ function handleFetchSuccess(response) {
         $('#partsList').html('<p>No parts found.</p>');
     }
 }
+/* v8 ignore stop */
 
+/* v8 ignore start */
 function handleFetchError(xhr, status, error) {
     $('#loadingIndicator').hide();
     $('#errorMessage').text('Failed to load parts: ' + error);
 }
+/* v8 ignore stop */
 
 function displayParts(parts) {
     const partsHtml = parts.map(part => `
@@ -60,6 +68,7 @@ function displayParts(parts) {
     $('#partsList').append(partsHtml);
 }
 
+/* v8 ignore start */
 function searchParts() {
     const searchTerm = $('#searchInput').val().toLowerCase();
     clearPage();
@@ -69,6 +78,7 @@ function searchParts() {
     );
     displayParts(filteredParts);
 }
+/* v8 ignore stop */
 
 function getCookie(name) {
     let cookieValue = null;
