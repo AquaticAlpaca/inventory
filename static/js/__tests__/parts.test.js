@@ -17,6 +17,7 @@ global.$ = $;
 const {
     displayParts,
     clearPage,
+    getCookie,
     showToast
 } = require('../parts');
 
@@ -90,6 +91,50 @@ describe('clearPage function', () => {
         $('#errorMessage').text('');
 
         expect(() => clearPage()).not.toThrow();
+    });
+});
+
+describe('getCookie', () => {
+    beforeEach(() => {
+        // Reset document.cookie before each test
+        Object.defineProperty(document, 'cookie', {
+            writable: true,
+            value: '',
+        });
+    });
+
+    test('should return the value of an existing cookie', () => {
+        // Set a cookie
+        document.cookie = 'testCookie=value123';
+
+        // Call getCookie and check the result
+        const result = getCookie('testCookie');
+        expect(result).toBe('value123');
+    });
+
+    test('should return null for a non-existing cookie', () => {
+        // Set a cookie
+        document.cookie = 'anotherCookie=value456';
+
+        // Call getCookie for a cookie that does not exist
+        const result = getCookie('nonExistingCookie');
+        expect(result).toBeNull();
+    });
+
+    test('should return null when cookies are empty', () => {
+        // No cookies set
+        const result = getCookie('testCookie');
+        expect(result).toBeNull();
+    });
+
+
+    test('should decode cookie values', () => {
+        // Set a cookie with encoded value
+        document.cookie = 'encodedCookie=%E2%9C%93'; // This is the check mark character (✓)
+
+        // Call getCookie and check the result
+        const result = getCookie('encodedCookie');
+        expect(result).toBe('✓');
     });
 });
 

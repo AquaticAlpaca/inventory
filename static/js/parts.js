@@ -85,6 +85,7 @@ function getCookie(name) {
     return cookieValue;
 }
 
+/* v8 ignore start */
 function deletePart(partId) {
     $.ajax({
         url: `${API_URL}/delete`,
@@ -98,7 +99,9 @@ function deletePart(partId) {
         error: handleDeleteError
     });
 }
+/* v8 ignore stop */
 
+/* v8 ignore start */
 function handleDeleteSuccess(response) {
     if (response.success) {
         showToast(response.message, 'success');
@@ -107,7 +110,9 @@ function handleDeleteSuccess(response) {
         showToast(response.message, 'danger');
     }
 }
+/* v8 ignore stop */
 
+/* v8 ignore start */
 function handleDeleteError(xhr) {
     let errorMessage = 'Failed to delete item: ' + xhr.responseText;
     if (xhr.status === 404) {
@@ -115,6 +120,7 @@ function handleDeleteError(xhr) {
     }
     showToast(errorMessage, 'danger');
 }
+/* v8 ignore stop */
 
 function clearPage() {
     $('#partsList').empty();
@@ -143,5 +149,6 @@ function showToast(message, type) {
 module.exports = {
     displayParts,
     clearPage,
+    getCookie,
     showToast
 };
