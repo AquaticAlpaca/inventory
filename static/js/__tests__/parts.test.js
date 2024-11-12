@@ -94,4 +94,4 @@ describe('clearPage function', () => {
 });
 
 // Jest completely fails to mock the functions called by my target.
-// Test handleDeleteError tests when Jest is better.
+// Test deletePart and handleDelete* tests when Jest is better.
