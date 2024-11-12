@@ -12,8 +12,12 @@ jest.mock('bootstrap', () => {
 });
 
 global.bootstrap = bootstrap;
+global.$ = $;
 
-const testSubject = require('../parts');
+const {
+    displayParts,
+    clearPage
+} = require('../parts');
 
 describe('Inventory JavaScript Functions', () => {
     beforeEach(() => {
@@ -29,14 +33,14 @@ describe('Inventory JavaScript Functions', () => {
             { id: 2, name: 'Part 2', partNumber: 'PN002', status: 'Unavailable', quantity: 0, location: 'Warehouse B' }
         ];
 
-        testSubject.displayParts(parts);
+        displayParts(parts);
 
         expect($('#partsList').html()).toContain('Part 1 (Part Number: PN001)');
         expect($('#partsList').html()).toContain('Part 2 (Part Number: PN002)');
     });
 
     test('showToast should display a toast message', () => {
-        testSubject.showToast('Test message', 'success');
+        showToast('Test message', 'success');
 
         expect($('.toast-container').children().length).toBe(1);
         expect($('.toast-body').text()).toBe('Test message');
@@ -47,20 +51,20 @@ describe('Inventory JavaScript Functions', () => {
 describe('clearPage function', () => {
     it('should clear the parts list', () => {
         $('#partsList').append('<div>Part 1</div>');
-        testSubject.clearPage();
+        clearPage();
         expect($('#partsList').children().length).toBe(0);
     });
 
     it('should clear the error message', () => {
         $('#errorMessage').text('An error occurred');
-        testSubject.clearPage();
+        clearPage();
         expect($('#errorMessage').text()).toBe('');
     });
 
     it('should not affect other elements', () => {
         $('body').append('<div id="otherElement"><div>Other Content</div></div>');
 
-        testSubject.clearPage();
+        clearPage();
         expect($('#otherElement').children().length).toBe(1); // Should still have 1 child
 
         $('#otherElement').remove();
@@ -71,11 +75,11 @@ describe('clearPage function', () => {
         $('#partsList').append('<div>Part 1</div>');
         $('#errorMessage').text('An error occurred');
 
-        testSubject.clearPage(); // First call
+        clearPage(); // First call
         expect($('#partsList').children().length).toBe(0);
         expect($('#errorMessage').text()).toBe('');
 
-        testSubject.clearPage(); // Second call
+        clearPage(); // Second call
         expect($('#partsList').children().length).toBe(0);
         expect($('#errorMessage').text()).toBe('');
     });
@@ -84,6 +88,9 @@ describe('clearPage function', () => {
         $('#partsList').empty();
         $('#errorMessage').text('');
 
-        expect(() => testSubject.clearPage()).not.toThrow();
+        expect(() => clearPage()).not.toThrow();
     });
 });
+
+// Jest completely fails to mock the functions called by my target.
+// Test handleDeleteError tests when Jest is better.
